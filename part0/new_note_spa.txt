@@ -1,0 +1,11 @@
+note over browser
+Event handler for 'submit' event fires on the form element.
+The browser's default behavior is prevented.
+The new note is created in some javascript.
+The new note is added to the local notes data.
+The notes are repainted in the DOM.
+An XHR request is sent to create the new note on the server.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 { message: "note created" }
